@@ -20,7 +20,7 @@ MongoClient.connect(dbURL, {
     color: 'red',
   });
 }).then((result) => {
-  console.log(result);
+  console.log(result.insertedCount);
 }).catch((error) => {
   console.log(error);
 });
